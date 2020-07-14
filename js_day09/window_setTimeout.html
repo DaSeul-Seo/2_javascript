@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="logo" src="./images/naver_logo.PNG" alt="네이버 로고">
+    <p id="p"></p>
+    <script>
+        let logo = document.getElementById("logo");
+        let timerId = null;
+        let intervalId;
+
+        logo.onmouseover = function(){ // 마우스가 들어왔을때
+            timerId = setTimeout('reLoad("http://www.naver.com")', 5000);
+            logo.text = "타이머 작동";
+            showMessage();
+            // timerId = setTimeout(function(){
+            //     window.location = 'http://www.naver.com';
+            // }, 5000); // 5초 후에 naver 열림
+        };
+        logo.onmouseout = function(){ // 마우스가 나갔을때
+            if(timerId != null){
+                clearTimeout(timerId);
+            }
+            clearMessage();
+        };
+        function reLoad(URL){
+            window.location = URL;
+        }
+        function showMessage(){
+            let cnt = 5;
+            intervalId = setInterval(function(){
+                document.querySelector('#p').innerText = '타이머 작동 >> ' + cnt;
+                cnt--;
+            }, 1000);
+        }
+        function clearMessage(){
+            document.querySelector('#p').innerText = '';
+            clearInterval(intervalId);
+        }
+    </script>
+</body>
+</html>
