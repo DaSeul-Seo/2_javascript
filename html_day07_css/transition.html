@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>전환</title>
+    <style>
+        div{
+            position: relative;
+            width: 200px;
+            height: 40px;
+            background: red;
+            transition: left 3s;
+            left: 0px;
+        }
+        div:hover{
+            /*width: 300px;*/
+            left: 100px;
+        }
+        span{
+            transition: font-size 5s;
+        }
+        span:hover{
+            font-size: 500%;
+        }
+    </style>
+</head>
+<body>
+<h3>font-size에 대한 전화</h3>
+<hr>
+<p><span>꽝!</span> 글자에 마우스를 올려보세요</p>
+<div>Transition</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import "style.css";
+    </style>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+        $(function(){
+            $('header>nav').load("nav.html");
+        });
+    </script>
+</head>
+<body>
+<div id="page">
+    <header>
+        <h1>다슬 홈페이지</h1>
+        <nav></nav>
+    </header>
+    <section id="left">
+        <nav>nav</nav>
+    </section>
+    <section id="center">
+        <p>section</p>
+        <header>header</header>
+        <article>article</article>
+        <footer>footer</footer>
+    </section>
+    <section id="right">
+        <aside>aside</aside>
+    </section>
+    <footer>
+        <p>footer</p>
+    </footer>
+</div>
+</body>
+</html>

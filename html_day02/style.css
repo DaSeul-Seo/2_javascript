@@ -1,0 +1,13 @@
+/* style.css */
+strong{
+    color : green;
+}
+div{
+    border : 10px solid orange;
+}
+p{
+    border: 3px dotted blue;
+}
+span{
+    color : blueviolet;
+}

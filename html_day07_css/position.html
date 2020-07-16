@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <style>
+       /* body{
+            background: green;
+        }*/
+        #box1{
+            width: 200px;
+            height: 200px;
+            border: 5px solid red;
+            box-shadow: 3px 3px 3px navy;
+            z-index: 1;
+            position: absolute;
+            background: pink;
+            left: 50px;
+            top: 50px;
+        }
+        #box2{
+            width: 200px;
+            height: 200px;
+            border: 5px solid blue;
+            /*box-shadow: 3px 3px 3px black;*/
+            z-index: 0;
+            position: absolute;
+            background: yellow;
+            left: 100px;
+            top: 100px;
+        }
+        #box1>p{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+<div id="box1"><p>aaa</p><p>Hello</p></div>
+<div id="box2">World</div>
+</body>
+</html>

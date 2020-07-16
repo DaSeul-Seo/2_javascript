@@ -1,0 +1,66 @@
+header, section, article, aside, footer {
+    border: 1px solid dodgerblue;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 7px;
+    background-color: linen;
+}
+#left, #right{
+    width: 220px;
+    height: 400px;
+}
+#center{
+    width: 410px;
+    height: 400px;
+    background-color: white;
+}
+#left, #center, #right{
+    float: left;
+}
+footer{
+    clear: both;
+}
+#center > article{
+    height: 250px;
+}
+div#page{
+    width: 900px;
+    background-color: skyblue;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul.topmenu{
+    border-top: 0px solid navy;
+    border-bottom: 0px solid navy;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 780px;
+    margin: 0 auto;
+}
+ul.topmenu > li{
+    width: 150px;
+    height: 40px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 35px;
+    list-style: none;
+    float: left;
+    margin: 0 3px;
+    border-radius: 20px;
+}
+header > nav {
+    border-top: 0px solid navy;
+    border-bottom: 0px solid navy;
+    padding: 0;
+    margin: 0;
+    /*background-color: skyblue;*/
+}
+ul.topmenu >li:hover{
+    background-color: mediumpurple;
+    border-bottom: 2px solid navy;
+    color: white;
+    text-shadow: 1px 1px 1px navy;
+}

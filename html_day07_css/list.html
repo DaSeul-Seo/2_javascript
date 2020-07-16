@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>리스트로 메뉴 만들기</title>
+    <style>
+        #member{
+            background: olive;
+        }
+        #member>ul{/* 여백과 패딩 모두 0*/
+            margin: 0;
+            padding: 0;
+            width: 567px; /* 모든 아이쳄(<li>)을 한 줄에 품을 수 있는 폭*/
+        }
+        #member>ul>li{
+            display: inline-block; /*새 줄로 넘어가지 않게*/
+            list-style: none; /* 마커 삭제*/
+            padding: 0px 15px; /* top=bottom=0, left=right=15px*/
+        }
+        #member>ul>li>a{
+            color: white;
+            text-decoration: none; /* 링크 보이지 않게*/
+        }
+        #member>ul>li>a:hover{
+            color: violet; /* 마우스 올라갈 때 색*/
+        }
+    </style>
+</head>
+<body>
+<nav id="member">
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ESPRESSO</a></li>
+        <li><a href="#">CAPPUCCINO</a></li>
+        <li><a href="#">CAFE LATTE</a></li>
+        <li><a href="#">FAQ</a></li>
+    </ul>
+</nav>
+</body>
+</html>

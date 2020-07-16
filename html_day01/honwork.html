@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>나의 소개</title>		
+	<style>
+		body {text-align : center;}
+		h2 {text-align : center; color : Red;}
+	</style>
+
+	<script>
+
+		function show(){
+			document.getElementById("d").src = "1.jpg"
+			document.getElementById("d").width = 150
+			document.getElementById("d").height = 150
+		}
+
+		function hide(){
+			document.getElementById("d").src=""
+			document.getElementById("d").width = 0
+			document.getElementById("d").height = 0
+		}
+
+	</script>	
+
+	</head>
+
+	<body>	
+
+		<h2 onmouseover="show()" onmouseout="hide()"> 슈렉 </h2>
+		<hr size="5" noshade width="500">
+		<div> <img id="d" src=""> </div>
+		저는 대한민국에서 태어나서 컴퓨터 공학<br>
+		을 전공하는 학생입니다. 제가 제일 좋아하<br>
+		는 과목은 <big><span style="color:red">웹 프로그래밍</span></big>이고, 그 중에<br>
+		서도 <big><span style="color:red">자바스크립트</span></big>를 제일 잘합니다.
+
+	</body>
+
+</html>

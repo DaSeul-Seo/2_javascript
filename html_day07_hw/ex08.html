@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>리스트로 수직메뉴 만들기</title>
+    <style>
+        #list>ul{
+            background: olivedrab;
+            width: 150px;
+            margin: 0;
+            padding: 0;
+        }
+        #list>ul>li{
+            display: inline-block;
+            list-style: none;
+            padding: 0px 15px;
+        }
+        #list>ul>li>a{
+            text-decoration: none;
+            color: white;
+        }
+        #list>ul>li>a:hover{
+            color: deeppink;
+        }
+    </style>
+</head>
+<body>
+<nav id="list">
+    <ul>
+        <li><a href="#">HOME</a></li><br>
+        <li><a href="#">EXPRESSO</a></li><br>
+        <li><a href="#">CAPPUCCINO</a></li><br>
+        <li><a href="#">CAFE LATTE</a></li><br>
+        <li><a href="#">FAQ</a></li>
+    </ul>
+</nav>
+</body>
+</html>
